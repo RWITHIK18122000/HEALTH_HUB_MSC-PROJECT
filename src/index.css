@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-950;
+  font-family: "Inter", sans-serif;
+}
+/* Style the date picker input */
+.input-date {
+  position: relative;
+}
+
+.input-date::before {
+  content: "📅"; /* Change to your desired icon or use an image */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #6b7280; /* Change the color to your desired color */
+  pointer-events: none;
+}
